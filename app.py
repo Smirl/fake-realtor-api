@@ -3,8 +3,10 @@
 from __future__ import division
 from math import ceil
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, Markup
 from faker import Factory
+import markdown
+
 
 app = Flask(__name__)
 
@@ -42,8 +44,13 @@ def random_property(faker):
 
 @app.route('/')
 def home():
-    """A simple HTML help page to the API."""
-    return render_template('index.html')
+    """Render the README.md as html."""
+    with open('README.md') as f:
+        content = markdown.markdown(
+            f.read(),
+            extensions=['markdown.extensions.tables']
+        ).replace('<table>', '<table class="table">')
+    return render_template('index.html', content=Markup(content))
 
 
 @app.route('/api/')

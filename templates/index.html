@@ -1,43 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tolomuco Real Estate API</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-   <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Tolomuco Real Estate API</h1>
-                <h2>An example data source to be used with the Tolomuco framework.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Usage</h3>
-                <p>The API is available at <a href="/api/">/api/</a> and can take the following GET arguments</p>
-                <dl class="dl-horizontal">
-                    <dt>per_page</dt>
-                    <dd><i>default: 10</i> - the number of results per page</dd>
-                    <dt>page</dt>
-                    <dd><i>default: 1</i> - the page number. First page is 1.</dd>
-                    <dt>total</dt>
-                    <dd><i>default: per_page * 2</i> - the number of results in total</dd>
-                    <dt>seed</dt>
-                    <dd><i>default: 1337405335</i> - the random number genorator seed.</dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tolomuco Real Estate API</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">{{ content }}</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
 </html>
