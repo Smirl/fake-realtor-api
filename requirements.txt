@@ -1,0 +1,4 @@
+eventlet==0.17.4
+fake-factory==0.5.3
+flask==0.10.1
+gunicorn==19.3.0
