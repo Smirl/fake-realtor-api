@@ -49,7 +49,8 @@ def home():
         content = markdown.markdown(
             f.read(),
             extensions=['markdown.extensions.tables']
-        ).replace('<table>', '<table class="table">')
+        )
+    content = content.replace('<table>', '<table class="table">')
     return render_template('index.html', content=Markup(content))
 
 

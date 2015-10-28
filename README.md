@@ -1,7 +1,7 @@
 # Tolomuco Real Estate API
 ## An example API to be used with the Tolomuco framework
 
-At the core of this simple Flask app is Faker (http://www.joke2k.net/faker/).
+At the core of this simple Flask app is [Faker](http://www.joke2k.net/faker/).
 
 
 ### Usage
@@ -18,4 +18,4 @@ seed          | 1337405335     | the random number genorator seed.
 
 ### Deployment
 
-This simple app is deployed to Heroku when `master` is pushed to. The `Procfile` defines the web service which is a simple gunicorn command with `eventlet` workers. You can find the app at https://fake-realtor-api.herokuapp.com/.
+This simple app is deployed to Heroku when `master` is pushed to. The `Procfile` defines the web service which is a simple gunicorn command with `eventlet` workers. You can find the app at [https://fake-realtor-api.herokuapp.com/](https://fake-realtor-api.herokuapp.com/).
