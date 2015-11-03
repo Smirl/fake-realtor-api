@@ -6,7 +6,7 @@ At the core of this simple Flask app is [Faker](http://www.joke2k.net/faker/).
 
 ### Usage
 
-The API is available at [/api/](/api/) and can take the following GET arguments:
+The API is available at [/api/](https://fake-realtor-api.herokuapp.com/api/) and can take the following GET arguments:
 
 
 GET parameter | Default        | Description
