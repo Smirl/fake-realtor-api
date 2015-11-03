@@ -58,7 +58,7 @@ def home():
 def api():
     """The only route. Return predictable but random Real Estate properties."""
     per_page = request.args.get('per_page', 10, int)
-    page = request.args.get('page', 1, int) - 1  # 0 based pages in code.
+    page = request.args.get('page', 0, int)
     total = request.args.get('total', per_page * 2, int)
     seed = request.args.get('seed', 1337405335, int)
     skipped = per_page * page
@@ -75,7 +75,7 @@ def api():
     return jsonify({
         'properties': properties,
         'per_page': per_page,
-        'page': page + 1,
+        'page': page,
         'total': total,
         'total_pages': ceil(total / per_page),
     })
