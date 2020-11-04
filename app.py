@@ -1,10 +1,10 @@
 """A simple flask app to return random Real Estate properties."""
 
-from __future__ import division
+
 from math import ceil
 
 from flask import Flask, request, jsonify, render_template, Markup
-from faker import Factory
+from faker import Faker
 import markdown
 
 
@@ -63,8 +63,8 @@ def api():
     seed = request.args.get('seed', 1337405335, int)
     skipped = per_page * page
 
-    faker = Factory.create()
-    faker.seed(seed)
+    Faker.seed(seed)
+    faker = Faker()
 
     properties = []
     for x in range(total):
