@@ -1,1 +1,1 @@
-web: gunicorn app:app --worker-class eventlet --workers 2 --log-level INFO --access-logfile - --error-logfile -
+web: gunicorn app:app --log-level INFO --access-logfile - --error-logfile -
